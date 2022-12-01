@@ -1,1 +1,12 @@
-export class CreatePokemonDto {}
+import { IsString, IsInt, MinLength, IsPositive, Min } from 'class-validator';
+
+export class CreatePokemonDto {
+  @IsInt()
+  @IsPositive()
+  @Min(1)
+  nmbr: number;
+
+  @IsString()
+  @MinLength(1)
+  name: string;
+}
