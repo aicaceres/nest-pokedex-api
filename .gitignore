@@ -3,6 +3,9 @@
 /node_modules
 /mongo
 
+#Enviroment
+.env
+
 # Logs
 logs
 *.log
